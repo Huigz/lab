@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Seven on </title>
-    <link>//localhost:1313/tags/seven/</link>
-    <description>Recent content in Seven on </description>
+    <title>Seven on 랩</title>
+    <link>http://localhost:1313/tags/seven/</link>
+    <description>Recent content in Seven on 랩</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 25 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/seven/index.xml" rel="self" type="application/rss+xml" />
+    <language>kr</language>
+    <lastBuildDate>Wed, 31 Jul 2024 14:32:45 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/seven/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quickly Experience the Theme</title>
-      <link>//localhost:1313/docs/quick-start/</link>
+      <link>http://localhost:1313/docs/quick-start/</link>
       <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/quick-start/</guid>
+      <guid>http://localhost:1313/docs/quick-start/</guid>
       <description>This article describes how to quickly experience the seven theme.&#xA;Prerequisites Install Hugo , with a version requirement of &amp;gt;= 0.124.0. Install Go . Install Node.js . Clone Repositorygit clone https://github.com/mrhelloboy/seven.git Install Dependenciescd seven/exampleSite hugo mod npm pack npm install Run Hugo Serverhugo server Open BrowserAccess http://localhost:1313 in your browser.</description>
     </item>
   </channel>

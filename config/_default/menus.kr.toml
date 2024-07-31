@@ -1,0 +1,16 @@
+[[main]]
+  name = "News"
+  pageRef = "archive"
+  weight = 10
+
+[[main]]
+  name = "Members"
+  pageRef = "members"
+  weight = 20
+
+
+[[main]]
+  name = "Research Projects"
+  weight = 30
+  pageRef = "docs"
+

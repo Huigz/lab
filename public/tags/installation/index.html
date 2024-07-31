@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="kr">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
     <meta
@@ -9,31 +9,50 @@
     <title>
       
             Installation - tags |
-            
+            랩
           
     </title><meta
   name="application-name"
-  content="" />
+  content="Seven Theme" />
 <meta
   name="apple-mobile-web-app-title"
-  content="" />
+  content="Seven Theme" />
 
 
   <meta name="title" content="Installation" />
 
 
 
-  <meta name="description" content="" />
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="description" content="SKKU 랩" />
+<meta name="theme-color" content="#ffffff" /><link rel="icon" href="/favicon.svg" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
+
+
+
+
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css"
+    integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU="
+    crossorigin="anonymous" />
+
+  
+    
+      <link rel="stylesheet" href="/css/search.css" />
+    
+
+  
 
 
 
 
 
 
-
+  
+    
+      <link rel="stylesheet" href="/css/waline.css" />
+    
+  
 
 
 
@@ -207,32 +226,59 @@
     <div
       class="mx-auto flex w-screen flex-wrap items-center justify-between place-self-center object-center px-1 md:w-[1000px] md:px-4">
       <div class="flex lg:flex-1"><a x-data href="/" class="p-1.5">
-  <span class="sr-only"></span>
+  <span class="sr-only">랩</span>
   
   
   
 
 
-  <div class="w-[130px]">
+  <div class="w-[0px]">
     
     <img
       x-cloak
       x-show="!$store.darkMode.on"
       src=""
-      class="h-[56px]"
+      class="h-[0px]"
       alt="Logo" />
     
     <img
       x-cloak
       x-show="$store.darkMode.on"
       src=""
-      class="h-[56px]"
+      class="h-[0px]"
       alt="Logo" />
-  </div></a>
+  </div><span
+      class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+      >Lab Name</span
+    ></a>
 </div>
 
       <div class="hidden lg:flex lg:gap-x-6">
         
+  
+    <a
+      href="/archive/"
+      class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >News</a
+    >
+  
+
+  
+    <a
+      href="/members/"
+      class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Members</a
+    >
+  
+
+  
+    <a
+      href="/docs/"
+      class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Research Projects</a
+    >
+  
+
 
 
   <div x-data="{ isOpen: false }" class="hs-menus relative">
@@ -241,7 +287,7 @@
       @click="isOpen = !isOpen"
       class="group flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
       aria-expanded="false">
-      
+      Category
       <svg
         class="size-4 flex-none transition"
         :class="{ 'rotate-180': isOpen }"
@@ -272,7 +318,7 @@
           <div
             class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
             <a
-              href="//localhost:1313/categories/docments/"
+              href="http://localhost:1313/categories/docments/"
               class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
               Docments
               <span class="absolute inset-0"></span>
@@ -282,7 +328,7 @@
           <div
             class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
             <a
-              href="//localhost:1313/categories/documents/"
+              href="http://localhost:1313/categories/documents/"
               class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
               Documents
               <span class="absolute inset-0"></span>
@@ -292,7 +338,7 @@
           <div
             class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
             <a
-              href="//localhost:1313/categories/go-tutorial/"
+              href="http://localhost:1313/categories/go-tutorial/"
               class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
               Go Tutorial
               <span class="absolute inset-0"></span>
@@ -336,6 +382,25 @@
   </button>
 </div>
 
+  <div class="flex size-10">
+    <button
+      type="button"
+      id="search-icon"
+      class="rounded-full p-2.5 text-center text-black transition hover:bg-white hover:shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
+      <svg
+        class="h-5 w-5"
+        fill="currentColor"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="4284">
+        <path
+          d="M769.323 708.992l182.741 182.699-60.373 60.373-182.699-182.741a382.293 382.293 0 0 1-239.659 84.01c-211.968 0-384-172.032-384-384s172.032-384 384-384 384 172.032 384 384a382.293 382.293 0 0 1-84.01 239.659z m-85.59-31.659a297.685 297.685 0 0 0 84.267-208c0-165.034-133.675-298.666-298.667-298.666-165.034 0-298.666 133.632-298.666 298.666C170.667 634.325 304.299 768 469.333 768a297.685 297.685 0 0 0 208-84.267l6.4-6.4z"
+          p-id="4285"></path>
+      </svg>
+    </button>
+  </div>
+
 <div class="flex lg:hidden">
           <button
             type="button"
@@ -365,34 +430,61 @@
     <div
       class="fixed inset-0 z-10 w-full overflow-y-auto bg-white/85 p-4 backdrop-blur-md dark:bg-gray-900/85 sm:ring-1 sm:ring-gray-900/10">
       <div class="mx-auto mt-10 flex w-full items-center justify-center"><a x-data href="/" class="p-1.5">
-  <span class="sr-only"></span>
+  <span class="sr-only">랩</span>
   
   
   
 
 
-  <div class="w-[130px]">
+  <div class="w-[0px]">
     
     <img
       x-cloak
       x-show="!$store.darkMode.on"
       src=""
-      class="h-[56px]"
+      class="h-[0px]"
       alt="Logo" />
     
     <img
       x-cloak
       x-show="$store.darkMode.on"
       src=""
-      class="h-[56px]"
+      class="h-[0px]"
       alt="Logo" />
-  </div></a>
+  </div><span
+      class="self-center whitespace-nowrap text-2xl font-semibold dark:text-white"
+      >Lab Name</span
+    ></a>
 </div>
 
       <div class="mt-6 flow-root">
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="flex flex-col space-y-2 py-6">
             
+  
+    <a
+      href="/archive/"
+      class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >News</a
+    >
+  
+
+  
+    <a
+      href="/members/"
+      class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Members</a
+    >
+  
+
+  
+    <a
+      href="/docs/"
+      class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Research Projects</a
+    >
+  
+
 
 
   <div x-data="{ subMenuOpen: false }" class="hs-menus">
@@ -403,7 +495,7 @@
       class="group flex w-full flex-col items-center justify-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:text-[--hs-text-color-hover] dark:text-white"
       aria-controls="disclosure-1"
       aria-expanded="false">
-      
+      Category
       <svg
         :class="{ 'rotate-180': subMenuOpen }"
         class="size-4 flex-none transition"
@@ -425,19 +517,19 @@
       id="disclosure-1">
       
         <a
-          href="//localhost:1313/categories/docments/"
+          href="http://localhost:1313/categories/docments/"
           class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
           >Docments</a
         >
       
         <a
-          href="//localhost:1313/categories/documents/"
+          href="http://localhost:1313/categories/documents/"
           class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
           >Documents</a
         >
       
         <a
-          href="//localhost:1313/categories/go-tutorial/"
+          href="http://localhost:1313/categories/go-tutorial/"
           class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
           >Go Tutorial</a
         >
@@ -499,7 +591,7 @@
         2024/04/25
       </p>
 
-      <a href="//localhost:1313/docs/installation/">
+      <a href="http://localhost:1313/docs/installation/">
         <p
           class="hs-content-title mt-2 text-lg text-gray-900 group-hover:text-[--hs-text-color-hover] dark:text-gray-300">
           Install the Theme
@@ -518,6 +610,95 @@
   </div>
 
 
+    
+      
+<div
+  id="search-overlay"
+  class="fixed inset-0 z-50 hidden bg-gray-900/90 backdrop-blur-lg dark:bg-gray-900/80"></div>
+<section
+  id="search-section"
+  class="hs-search z-50 flex hidden h-dvh w-full flex-col">
+  
+  <div
+    class="flex h-dvh w-full flex-col overflow-auto md:mx-auto md:w-2/3 lg:max-w-2xl">
+    
+    <div
+      id="searchBoxDiv"
+      class="hs-search-input-wrapper sticky top-[-88px] z-50 flex flex-row justify-between px-8 pt-[88px]">
+      <div id="searchBox" class="my-6 flex w-full flex-row items-center"></div>
+    </div>
+
+    
+    <div class="hs-search-results-wrapper h-[30rem] overflow-auto">
+      <div id="searchResults" class="hs-search-results my-3 px-6"></div>
+      <div
+        id="NotSearchResults"
+        class="hidden flex-col items-center justify-around space-y-4 px-6 py-10">
+        <p
+          class="hs-search-no-results text-lg font-bold tracking-wide text-gray-500">
+          
+        </p>
+      </div>
+      <div
+        id="searchError"
+        class="hidden flex-col items-center justify-around space-y-4 px-6 py-10 text-center ">
+        <p class="hs-search-error text-lg font-bold text-red-500">
+          
+        </p>
+      </div>
+      <div
+        id="searchLoading"
+        class="hidden flex-col items-center justify-around px-6 py-10">
+        <svg
+          t="1689331200868"
+          class="icon animate-spin"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="51409"
+          width="128"
+          height="128">
+          <path
+            d="M512 170.666667v85.333333a256 256 0 1 1-223.573333 131.2L213.930667 345.6A341.333333 341.333333 0 1 0 512 170.666667z"
+            fill="#bfbfbf"
+            opacity=".3"
+            p-id="51410"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  
+  <div
+    class="hs-search-other bottom-0 flex flex-col items-center justify-center space-y-2 py-8 text-xs font-bold text-gray-600">
+    <div class="hs-search-cancel hidden md:block">
+      
+    </div>
+    <div class="hs-search-powered_by flex items-center justify-center">
+      
+      
+    </div>
+  </div>
+</section>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.2/dist/algoliasearch-lite.umd.js"
+  integrity="sha256-X2G+vjV8i6Jj2NSGFTvy6Z4q2AlmF5aH0HiIpWJ8eU4="
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.3/dist/instantsearch.production.min.js"
+  integrity="sha256-mWvjWAfZylKMOg+S3HLq+wng1HHRnl2Idr2r8NsUzIU="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/search.js"></script>
+
     <footer
   id="footer"
   x-ref="footer"
@@ -526,6 +707,64 @@
 
   <div class="flex h-5 space-x-3">
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <a
+      href="https://github.com/mrhelloboy/seven"
+      class="text-gray-600 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
+      <svg
+        class="size-4"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+          clip-rule="evenodd" />
+      </svg>
+      <span class="sr-only">GitHub account</span>
+    </a>
+  
+
+  
+
+  
+
+  
+    <a
+      href=""
+      class="text-gray-600 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
+      <svg
+        class="size-4"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+        <path
+          fill="currentColor"
+          d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z" />
+      </svg>
+
+      <span class="sr-only">X page</span>
+    </a>
+  
+
+  
+
+  
+
 
 
 
@@ -534,30 +773,7 @@
   
   
   <span x-data class="flex flex-row items-center justify-center"
-    >Powered by <a href="https://gohugo.io/" aria-label="hugo link">
-    <img
-    src="/images/default/hugo-logo-wide.svg"
-    alt="Hugo"
-    class="mx-1 h-3" />
-    </a> & <a
-    href="https://github.com/mrhelloboy/seven"
-    aria-label="The github address of seven theme">
-    <img
-    x-show="!$store.darkMode.on"
-    x-cloak
-    id="footer-theme-light-logo"
-    src="/images/default/seven-logo.svg"
-    alt="seven theme logo"
-    class="mx-1 h-5" />
-
-    <img
-    x-show="$store.darkMode.on"
-    x-cloak
-    id="footer-theme-dark-logo"
-    src="/images/default/seven-logo-dark.svg"
-    alt="seven theme logo"
-    class="mx-1 h-5" />
-    </a></span
+    ></span
   >
 
   <span class="flex flex-col items-center justify-between space-y-3">
@@ -565,14 +781,15 @@
     
     
     
-       -
       2024
     
 
+    Lab
     
-    All Rights Reserved
   </span>
 </footer>
+
+  
 
 </body>
 </html>

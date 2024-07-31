@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Social Links on </title>
-    <link>//localhost:1313/tags/social-links/</link>
-    <description>Recent content in Social Links on </description>
+    <title>Social Links on Seven Theme</title>
+    <link>http://localhost:1313/tags/social-links/</link>
+    <description>Recent content in Social Links on Seven Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 25 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/tags/social-links/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jul 2024 14:32:45 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/social-links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Add additional social links</title>
-      <link>//localhost:1313/docs/add-social-links/</link>
+      <link>http://localhost:1313/docs/add-social-links/</link>
       <pubDate>Thu, 25 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/docs/add-social-links/</guid>
+      <guid>http://localhost:1313/docs/add-social-links/</guid>
       <description>The theme defaults to providing social links for email, Github, X, and WeChat, but these may not be sufficient. However, you can add additional social links by overriding the hook_social_links.html file.&#xA;hook_social_links.html is a hook that you can create a file with the same name in the partials/index directory of your site to override the default implementation.&#xA;YourSite/layouts/partials/index/hook_social_links.html Regular LinksRegular links, where clicking the icon directly redirects to the link address.</description>
     </item>
   </channel>

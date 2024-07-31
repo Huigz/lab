@@ -1,31 +1,31 @@
 ---
-title: "快速体验主题"
+title: "Quickly Experience the Theme"
 date: 2024-04-25
 draft: false
 weight: 2
-categories: ["文档"]
-tags: ["seven", "体验", "github"]
+categories: ["Documents"]
+tags: ["seven", "demo", "github"]
 layout: "docs"
 url: "docs/quick-start"
 image: "/images/docs/quick-start.webp"
-description: "介绍了快速体验 seven 主题的步骤。"
+description: "Introduces the steps to quickly experience the seven theme."
 ---
 
-这篇文章介绍如何快速体验 seven 主题。
+This article describes how to quickly experience the seven theme.
 
-## 前提条件
+## Prerequisites
 
-- 下载 [Hugo](https://gohugo.io/installation/), 版本要求 >= 0.124.0
-- 下载 [Go](https://go.dev/dl/)
-- 下载 [Node.js](https://nodejs.org/en)
+- Install [Hugo](https://gohugo.io/installation/), with a version requirement of >= 0.124.0.
+- Install [Go](https://go.dev/dl/).
+- Install [Node.js](https://nodejs.org/en).
 
-## 克隆主题仓库
+## Clone Repository
 
 ```bash
 git clone https://github.com/mrhelloboy/seven.git
 ```
 
-## 下载依赖及初始化
+## Install Dependencies
 
 ```bash
 cd seven/exampleSite
@@ -35,16 +35,12 @@ hugo mod npm pack
 npm install
 ```
 
-## 启动服务
+## Run Hugo Server
 
-```bash
+```
 hugo server
 ```
 
-## 开始访问之旅
+## Open Browser
 
-在浏览器中访问地址：
-
-```bash
-http://localhost:1313/
-```
+Access [http://localhost:1313](http://localhost:1313) in your browser.

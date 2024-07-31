@@ -1,44 +1,44 @@
 ---
-title: "安装主题"
+title: "Install the Theme"
 date: 2024-04-25
 draft: false
 weight: 6
-categories: ["文档"]
-tags: ["安装"]
+categories: ["Docments"]
+tags: ["installation"]
 layout: "docs"
 url: "docs/installation"
 image: "/images/docs/installation.webp"
-description: "从零开始安装主题"
+description: "Installing the Theme from Scratch"
 ---
 
-从零开始安装主题。
+Installing the theme from scratch.
 
-## 前提条件
+## Prerequisites
 
-- 下载 [Hugo](https://gohugo.io/installation/), 版本要求 >= 0.124.0
-- 下载 [Go](https://go.dev/dl/)
-- 下载 [Node.js](https://nodejs.org/en)
+- Download [Hugo](https://gohugo.io/installation/), version required >= 0.124.0
+- Download [Go](https://go.dev/dl/)
+- Download [Node.js](https://nodejs.org/en)
 
-## 创建站点
+## Creating a Site
 
 ```sh
 hugo new site [sitename]
 
 cd [sitename]
 
-# 删除站点的 themes 目录
+# Deleting the Themes Directory from the Site
 rm -rf themes
 ```
 
-## 初始化 Hugo 模块
+## Initializing Hugo Modules
 
 ```sh
 hugo mod init github.com/[username]/[sitename]
 ```
 
-## 导入主题模块
+## Importing the Theme Module
 
-在 hugo.toml 中配置主题
+Configure the theme in hugo.toml
 
 ```toml
 [module]
@@ -46,11 +46,11 @@ hugo mod init github.com/[username]/[sitename]
   path = 'github.com/mrhelloboy/seven'
 ```
 
-> 因为主题需要额外的配置参数，为了避免出错，建议先使用本示例的配置文件，然后再按需修改。
+> Because the theme requires additional configuration parameters, it's recommended to use the configuration file provided in this example to avoid errors, and then modify it as needed.
 
-更多 hugo 模块的说明及使用，请参考 [Hugo Modules](https://gohugo.io/hugo-modules/)
+For more information on Hugo Modules and their usage, please refer to [Hugo Modules](https://gohugo.io/hugo-modules/)
 
-## 安装依赖及启动
+## Installing Dependencies and Starting
 
 ```sh
 hugo mod npm pack

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="kr">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8" />
     <meta
@@ -7,30 +7,49 @@
       id="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>
-      Add additional social links | 
+      添加额外的社交链接 | 랩
     </title><meta
   name="application-name"
-  content="" />
+  content="Seven Theme" />
 <meta
   name="apple-mobile-web-app-title"
-  content="" />
+  content="Seven Theme" />
 
 
-  <meta name="title" content="Add additional social links" />
+  <meta name="title" content="添加额外的社交链接" />
 
 
 
-  <meta name="description" content="How to configure regular links and QR code pop-up social links tutorial" />
-<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-
+  <meta name="description" content="如何配置普通链接和二维码弹窗方式的社交链接的教程" />
+<meta name="theme-color" content="#ffffff" /><link rel="icon" href="/favicon.svg" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
 
 
 
 
+  
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/instantsearch.css@8.0.0/themes/reset-min.css"
+    integrity="sha256-2AeJLzExpZvqLUxMfcs+4DWcMwNfpnjUeAAvEtPr0wU="
+    crossorigin="anonymous" />
+
+  
+    
+      <link rel="stylesheet" href="/css/search.css" />
+    
+
+  
 
 
+
+
+
+
+  
+    
+      <link rel="stylesheet" href="/css/waline.css" />
+    
+  
 
 
 
@@ -210,25 +229,25 @@
     <div
       class="mx-auto flex w-screen flex-wrap items-center justify-between place-self-center object-center px-1 md:w-[1000px] md:px-4">
       <div class="flex lg:flex-1"><a x-data href="/" class="p-1.5">
-  <span class="sr-only"></span>
+  <span class="sr-only">랩</span>
   
   
   
 
 
-  <div class="w-[130px]">
+  <div class="w-[120px]">
     
     <img
       x-cloak
       x-show="!$store.darkMode.on"
-      src=""
+      src="/images/logo.svg"
       class="h-[56px]"
       alt="Logo" />
     
     <img
       x-cloak
       x-show="$store.darkMode.on"
-      src=""
+      src="/images/logo-footer.svg"
       class="h-[56px]"
       alt="Logo" />
   </div></a>
@@ -236,6 +255,30 @@
 
       <div class="hidden lg:flex lg:gap-x-6">
         
+  
+    <a
+      href="/archive/"
+      class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >News</a
+    >
+  
+
+  
+    <a
+      href="/members/"
+      class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Members</a
+    >
+  
+
+  
+    <a
+      href="/docs/"
+      class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Research Projects</a
+    >
+  
+
 
 
   <div x-data="{ isOpen: false }" class="hs-menus relative">
@@ -244,7 +287,7 @@
       @click="isOpen = !isOpen"
       class="group flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
       aria-expanded="false">
-      
+      Category
       <svg
         class="size-4 flex-none transition"
         :class="{ 'rotate-180': isOpen }"
@@ -275,7 +318,7 @@
           <div
             class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
             <a
-              href="//localhost:1313/categories/docments/"
+              href="http://localhost:1313/categories/docments/"
               class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
               Docments
               <span class="absolute inset-0"></span>
@@ -285,7 +328,7 @@
           <div
             class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
             <a
-              href="//localhost:1313/categories/documents/"
+              href="http://localhost:1313/categories/documents/"
               class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
               Documents
               <span class="absolute inset-0"></span>
@@ -295,9 +338,19 @@
           <div
             class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
             <a
-              href="//localhost:1313/categories/go-tutorial/"
+              href="http://localhost:1313/categories/go-tutorial/"
               class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
               Go Tutorial
+              <span class="absolute inset-0"></span>
+            </a>
+          </div>
+        
+          <div
+            class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
+            <a
+              href="http://localhost:1313/categories/%E6%96%87%E6%A1%A3/"
+              class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
+              文档
               <span class="absolute inset-0"></span>
             </a>
           </div>
@@ -310,6 +363,57 @@
       </div>
 
       <div class="flex flex-1 items-center justify-end">
+  <div x-data="{ isOpen: false }" class="relative">
+    <button
+      type="button"
+      @click="isOpen = !isOpen"
+      class="group flex size-10 items-center rounded-full p-[11px] text-black transition hover:bg-white hover:shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)]"
+      aria-expanded="false">
+      <svg
+        class="size-[18px]"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 -960 960 960">
+        <path
+          d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z" />
+      </svg>
+    </button>
+
+    <div
+      x-show="isOpen"
+      x-cloak
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="opacity-0 translate-y-1"
+      x-transition:enter-end="opacity-100 translate-y-0"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 translate-y-0"
+      x-transition:leave-end="opacity-0 translate-y-1"
+      @click.away="isOpen = false"
+      class="absolute -left-5 top-full z-10 mt-3 w-screen max-w-32 overflow-hidden rounded-xl bg-white/95 shadow-lg ring-1 ring-gray-900/5 backdrop-blur-xl dark:bg-gray-800/95">
+      <div class="p-2">
+        
+          <div
+            class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
+            <a
+              class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white"
+              href="/"
+              >한국어</a
+            >
+          </div>
+        
+          <div
+            class="relative rounded-lg px-4 py-2.5 text-sm leading-6 hover:bg-gray-300/30 hover:backdrop-blur-md">
+            <a
+              class="block font-semibold text-gray-900 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white"
+              href="/en/"
+              >English</a
+            >
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
 <div class="flex size-10">
   <button
     type="button"
@@ -338,6 +442,25 @@
     </svg>
   </button>
 </div>
+
+  <div class="flex size-10">
+    <button
+      type="button"
+      id="search-icon"
+      class="rounded-full p-2.5 text-center text-black transition hover:bg-white hover:shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] dark:text-gray-200 dark:hover:bg-gray-800 dark:hover:shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
+      <svg
+        class="h-5 w-5"
+        fill="currentColor"
+        viewBox="0 0 1024 1024"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        p-id="4284">
+        <path
+          d="M769.323 708.992l182.741 182.699-60.373 60.373-182.699-182.741a382.293 382.293 0 0 1-239.659 84.01c-211.968 0-384-172.032-384-384s172.032-384 384-384 384 172.032 384 384a382.293 382.293 0 0 1-84.01 239.659z m-85.59-31.659a297.685 297.685 0 0 0 84.267-208c0-165.034-133.675-298.666-298.667-298.666-165.034 0-298.666 133.632-298.666 298.666C170.667 634.325 304.299 768 469.333 768a297.685 297.685 0 0 0 208-84.267l6.4-6.4z"
+          p-id="4285"></path>
+      </svg>
+    </button>
+  </div>
 
 <div class="flex lg:hidden">
           <button
@@ -368,25 +491,25 @@
     <div
       class="fixed inset-0 z-10 w-full overflow-y-auto bg-white/85 p-4 backdrop-blur-md dark:bg-gray-900/85 sm:ring-1 sm:ring-gray-900/10">
       <div class="mx-auto mt-10 flex w-full items-center justify-center"><a x-data href="/" class="p-1.5">
-  <span class="sr-only"></span>
+  <span class="sr-only">랩</span>
   
   
   
 
 
-  <div class="w-[130px]">
+  <div class="w-[120px]">
     
     <img
       x-cloak
       x-show="!$store.darkMode.on"
-      src=""
+      src="/images/logo.svg"
       class="h-[56px]"
       alt="Logo" />
     
     <img
       x-cloak
       x-show="$store.darkMode.on"
-      src=""
+      src="/images/logo-footer.svg"
       class="h-[56px]"
       alt="Logo" />
   </div></a>
@@ -396,6 +519,30 @@
         <div class="-my-6 divide-y divide-gray-500/10">
           <div class="flex flex-col space-y-2 py-6">
             
+  
+    <a
+      href="/archive/"
+      class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >News</a
+    >
+  
+
+  
+    <a
+      href="/members/"
+      class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Members</a
+    >
+  
+
+  
+    <a
+      href="/docs/"
+      class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+      >Research Projects</a
+    >
+  
+
 
 
   <div x-data="{ subMenuOpen: false }" class="hs-menus">
@@ -406,7 +553,7 @@
       class="group flex w-full flex-col items-center justify-center rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 hover:text-[--hs-text-color-hover] dark:text-white"
       aria-controls="disclosure-1"
       aria-expanded="false">
-      
+      Category
       <svg
         :class="{ 'rotate-180': subMenuOpen }"
         class="size-4 flex-none transition"
@@ -428,21 +575,27 @@
       id="disclosure-1">
       
         <a
-          href="//localhost:1313/categories/docments/"
+          href="http://localhost:1313/categories/docments/"
           class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
           >Docments</a
         >
       
         <a
-          href="//localhost:1313/categories/documents/"
+          href="http://localhost:1313/categories/documents/"
           class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
           >Documents</a
         >
       
         <a
-          href="//localhost:1313/categories/go-tutorial/"
+          href="http://localhost:1313/categories/go-tutorial/"
           class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
           >Go Tutorial</a
+        >
+      
+        <a
+          href="http://localhost:1313/categories/%E6%96%87%E6%A1%A3/"
+          class="block rounded-lg px-3 py-2 text-center text-sm font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
+          >文档</a
         >
       
 
@@ -488,7 +641,7 @@
 
 
 
-<div class="h-full w-full bg-[#c8484e] text-center"></div>
+<div class="h-full w-full bg-[#f28e65] text-center"></div>
 </div>
   
 
@@ -514,8 +667,8 @@
                   <span class="italic text-red-700"> > </span>
                   <a
                     class="hover:text-[--hs-text-color-hover] hover:underline hover:decoration-[--decoration-color] hover:underline-offset-4"
-                    href="//localhost:1313/categories/documents/"
-                    >Documents</a
+                    href="http://localhost:1313/categories/%E6%96%87%E6%A1%A3/"
+                    >文档</a
                   >
                 
               </span>
@@ -523,7 +676,7 @@
             <div
               id="hs-content-title"
               class="hs-content-title py-1 text-start text-3xl font-bold tracking-wide text-black dark:text-white lg:text-4xl">
-              Add additional social links
+              添加额外的社交链接
             </div>
 
             <div
@@ -531,11 +684,40 @@
               <span>2024/04/25</span>
               <div
                 class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
-              <span>702&nbsp;words</span>
+              <span>899&nbsp;</span>
               <div
                 class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
-              <span>4&nbsp;mins</span>
+              <span>2&nbsp;</span>
               
+                <div
+                  class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
+                <p>
+                  <span
+                    id="twikoo_visitors"
+                    class="page-info-pageview-count"
+                    data-path="/docs/add-social-links/"
+                    >...</span
+                  >
+                  &nbsp;
+                </p>
+              
+              
+                
+                  <div
+                    class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
+                  <button
+                    x-data
+                    @click="toComment()"
+                    id="speed-comment-count-id"
+                    class="whitespace-nowrap hover:text-[--hs-text-color-hover] hover:underline hover:decoration-[--hs-decoration-color] hover:underline-offset-4">
+                    <span
+                      class="waline-comment-count"
+                      data-path="/docs/add-social-links/"
+                      >...</span
+                    >
+                    &nbsp;
+                  </button>
+                
               
             </div>
           </div>
@@ -558,7 +740,7 @@
                 </span>
 
                 <span class="hs-toc-title text-sm font-medium">
-                  Table of Contents
+                  
                 </span>
               </button>
               <div
@@ -569,8 +751,8 @@
                 class="hs-toc mb-3 mt-1 space-y-1 px-2">
                 <nav id="TableOfContents">
   <ul>
-    <li><a href="#regular-links">Regular Links</a></li>
-    <li><a href="#qr-code-pop-up">QR Code Pop-up</a></li>
+    <li><a href="#普通链接">普通链接</a></li>
+    <li><a href="#二维码弹窗">二维码弹窗</a></li>
   </ul>
 </nav>
               </div>
@@ -581,11 +763,11 @@
           <div
             id="hs-content"
             class="hs-content format mx-auto mt-2 max-w-none dark:format-invert md:format-base format-figure:flex format-figure:flex-col format-figure:items-center format-img:cursor-zoom-in dark:text-gray-300 lg:mt-11">
-            <p>The theme defaults to providing social links for email, Github, X, and WeChat, but these may not be sufficient. However, you can add additional social links by overriding the <code>hook_social_links.html</code> file.</p>
-<p><code>hook_social_links.html</code> is a hook that you can create a file with the same name in the <code>partials/index</code> directory of your site to override the default implementation.</p>
+            <p>主题默认提供了邮件、Github、X 和微信四种社交链接，但这是远远不够的，不过可以通过重写 <code>hook_social_links.html</code> 来添加其他的社交链接。</p>
+<p><code>hook_social_links.html</code> 是一个钩子，你可以在站点的 <code>partials/index</code> 目录下创建一个同名文件来覆盖默认的实现。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">YourSite/layouts/partials/index/hook_social_links.html
-</span></span></code></pre></div><h2 class="group head-tag" id="regular-links">Regular Links<a data-title-of-head class="group-hover:after:content-['__#'] no-underline hover:text-[--hs-text-color-hover]" href="#regular-links"></a></h2><p>Regular links, where clicking the icon directly redirects to the link address.</p>
-<p>For example, if I need to add a social link for <code>Dribbble</code>, I would add the following code in <code>hook_social_links.html</code>:</p>
+</span></span></code></pre></div><h2 class="group head-tag" id="普通链接">普通链接<a data-title-of-head class="group-hover:after:content-['__#'] no-underline hover:text-[--hs-text-color-hover]" href="#%e6%99%ae%e9%80%9a%e9%93%be%e6%8e%a5"></a></h2><p>普通链接方式，即点击图标后直接跳转到链接地址。</p>
+<p>比如，我需要添加 <code>Dribbble</code> 的社交链接，那么在 <code>hook_social_links.html</code> 中添加如下代码</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">a</span>
 </span></span><span class="line"><span class="cl">  <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span>
 </span></span><span class="line"><span class="cl">  <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-gray-900 hover:text-blue-700 dark:text-gray-400 dark:hover:text-white&#34;</span>
@@ -605,19 +787,20 @@
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;sr-only&#34;</span><span class="p">&gt;</span>Dribbble account<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>Here&rsquo;s an explanation of some element attributes:</p>
+</span></span></code></pre></div><p>需要对一些元素属性说明：</p>
 <ol>
-<li>The <code>class</code> attribute of the <code>&lt;a&gt;</code> tag is set to Tailwind CSS class names, which can generally be left unchanged.</li>
-<li>The <code>class</code> attribute of the <code>&lt;svg&gt;</code> tag is also set to Tailwind CSS class names. The <code>size-5</code> class determines the size of the icon, which can generally be left unchanged.</li>
+<li><code>&lt;a&gt;</code> 标签的 <code>href</code> 属性设置为 <code>#</code>，需要替换成自己的链接。</li>
+<li><code>&lt;a&gt;</code> 标签的 <code>class</code> 属性设置的值是 Tailwind CSS 的类名，默认可以不用修改。</li>
+<li><code>&lt;svg&gt;</code> 标签的 <code>class</code> 属性设置的值也是 Tailwind CSS 的类名，其中 <code>size-5</code> 是图标的大小，默认可以不用修改。</li>
 </ol>
-<p>When adding a new SVG icon, make sure to update or remove certain attributes:</p>
+<p>当添加新的 svg 时，需要对里面的一些属性已经移除及添加：</p>
 <ol>
-<li>Add <code>class=&quot;size-5&quot;</code>.</li>
-<li>Add <code>fill=&quot;currentColor&quot;</code>.</li>
-<li>Remove the <code>fill=&quot;xxxx&quot;</code> attribute inside the SVG, as the color will be set based on <code>fill=&quot;currentColor&quot;</code>.</li>
-<li>Remove the <code>height</code> and <code>width</code> attributes inside the SVG, as the size is determined by the <code>size-*</code> class in the SVG.</li>
+<li>添加 <code>class=&quot;size-5&quot;</code></li>
+<li>添加 <code>fill=&quot;currentColor&quot;</code></li>
+<li>移除里面的 <code>fill=&quot;xxxx&quot;</code>, 因为会根据 <code>fill=&quot;currentColor&quot;</code> 来设置颜色。</li>
+<li>移除里面的 <code>height</code> 和 <code>width</code> 属性，因为 svg 会根据 class 中的 <code>size-*</code> 来设置大小。所以</li>
 </ol>
-<h2 class="group head-tag" id="qr-code-pop-up">QR Code Pop-up<a data-title-of-head class="group-hover:after:content-['__#'] no-underline hover:text-[--hs-text-color-hover]" href="#qr-code-pop-up"></a></h2><p>QR code pop-up method, where clicking the icon pops up a window containing a QR code.</p>
+<h2 class="group head-tag" id="二维码弹窗">二维码弹窗<a data-title-of-head class="group-hover:after:content-['__#'] no-underline hover:text-[--hs-text-color-hover]" href="#%e4%ba%8c%e7%bb%b4%e7%a0%81%e5%bc%b9%e7%aa%97"></a></h2><p>二维码弹窗方式，即点击图标后弹出一个弹窗，里面包含二维码。</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">x-data</span><span class="o">=</span><span class="s">&#34;{ openQC: false }&#34;</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">button</span>
 </span></span><span class="line"><span class="cl">    <span class="err">@</span><span class="na">click</span><span class="o">=</span><span class="s">&#34;openQC = !openQC; scrollY = window.scrollY; document.body.style.overflow = &#39;hidden&#39;;&#34;</span>
@@ -678,16 +861,16 @@
 </span></span><span class="line"><span class="cl">    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-</span></span></code></pre></div><p>The QR code method is relatively complex. Within the <code>&lt;button&gt;</code> element, there are two SVG icons. The first one represents the social media account icon, and the second one represents the QR code icon. It&rsquo;s advisable not to modify the second QR code image. The <code>&lt;div&gt;</code> element at the same level as the <code>&lt;button&gt;</code> is used to handle the QR code pop-up.</p>
-<p>Additionally, besides using Tailwind CSS class names, you may notice some attributes like <code>x-data</code>, <code>@click</code>, <code>x-show</code>, and <code>x-cloak</code>. These are part of the syntax of Alpine.js. You can refer to the 
+</span></span></code></pre></div><p>二维码的方式相对比较复杂，其中 <code>&lt;button&gt;</code> 中有两个 svg 图标，第一个是社交账号图标，第二个是二维码图标。第二个二维码图片建议不用修改。与 <code>&lt;button&gt;</code> 用级别的 <code>&lt;div&gt;</code> 元素是用来处理二维码弹窗的。</p>
+<p>同时，你也可能注意到了里面用到的 Tailwind CSS 的类名外，还有一些 <code>x-data</code>、<code>@click</code>、<code>x-show</code> 和 <code>x-cloak</code> 之类的，这些是 <code>Alpine.js</code> 的语法，可以参考 
 <a
   href="https://alpinejs.dev/start-here"
   
     target="_blank"
   
-  >Alpine.js documentation</a
+  >Alpine.js 文档</a
 >
- for further understanding, but it&rsquo;s okay if you&rsquo;re not familiar with it.</p>
+ 来进一步了解，不过不了解也没关系。</p>
 
           </div>
 
@@ -698,21 +881,21 @@
               
                 <a
                   class="text-center hover:text-[--hs-text-color-hover]"
-                  href="//localhost:1313/tags/social-links/"
+                  href="http://localhost:1313/tags/%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5/"
                   ><span class="text-red-700 ">#</span
                   ><span
                     class="hover:text-[--hs-text-color-hover] hover:underline hover:decoration-[--decoration-color] hover:underline-offset-4"
-                    >Social Links</span
+                    >社交链接</span
                   ></a
                 >
               
                 <a
                   class="text-center hover:text-[--hs-text-color-hover]"
-                  href="//localhost:1313/tags/qrcode/"
+                  href="http://localhost:1313/tags/%E4%BA%8C%E7%BB%B4%E7%A0%81/"
                   ><span class="text-red-700 ">#</span
                   ><span
                     class="hover:text-[--hs-text-color-hover] hover:underline hover:decoration-[--decoration-color] hover:underline-offset-4"
-                    >Qrcode</span
+                    >二维码</span
                   ></a
                 >
               
@@ -775,7 +958,7 @@
                   <h2
                     class="hs-toc-title text-base font-bold leading-6 text-gray-700 dark:text-gray-400"
                     id="slide-over-title">
-                    In this article
+                    
                   </h2>
 
                   <div
@@ -808,8 +991,8 @@
                   <div id="hs-toc" class="hs-toc text-sm lg:text-xs">
                     <nav id="TableOfContents">
   <ul>
-    <li><a href="#regular-links">Regular Links</a></li>
-    <li><a href="#qr-code-pop-up">QR Code Pop-up</a></li>
+    <li><a href="#普通链接">普通链接</a></li>
+    <li><a href="#二维码弹窗">二维码弹窗</a></li>
   </ul>
 </nav>
                   </div>
@@ -826,6 +1009,38 @@
     </div>
 
     
+    
+      <div
+        id="hs-comment"
+        class="mx-auto max-w-screen-xl lg:grid lg:grid-cols-4 xl:grid-cols-5">
+        <span class="hidden lg:block"></span>
+        <div class="items-stretch lg:col-span-2 lg:col-start-2 xl:col-span-3">
+
+  <div id="waline" class="py-5 md:px-2 lg:px-8 dark:text-gray-400"></div>
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  <script
+    defer
+    type="module"
+    src="/js/waline/index.js"></script>
+
+
+
+
+
+
+
+</div>
+      </div>
     
 
   </div>
@@ -860,6 +1075,95 @@
 
 
 
+    
+      
+<div
+  id="search-overlay"
+  class="fixed inset-0 z-50 hidden bg-gray-900/90 backdrop-blur-lg dark:bg-gray-900/80"></div>
+<section
+  id="search-section"
+  class="hs-search z-50 flex hidden h-dvh w-full flex-col">
+  
+  <div
+    class="flex h-dvh w-full flex-col overflow-auto md:mx-auto md:w-2/3 lg:max-w-2xl">
+    
+    <div
+      id="searchBoxDiv"
+      class="hs-search-input-wrapper sticky top-[-88px] z-50 flex flex-row justify-between px-8 pt-[88px]">
+      <div id="searchBox" class="my-6 flex w-full flex-row items-center"></div>
+    </div>
+
+    
+    <div class="hs-search-results-wrapper h-[30rem] overflow-auto">
+      <div id="searchResults" class="hs-search-results my-3 px-6"></div>
+      <div
+        id="NotSearchResults"
+        class="hidden flex-col items-center justify-around space-y-4 px-6 py-10">
+        <p
+          class="hs-search-no-results text-lg font-bold tracking-wide text-gray-500">
+          
+        </p>
+      </div>
+      <div
+        id="searchError"
+        class="hidden flex-col items-center justify-around space-y-4 px-6 py-10 text-center ">
+        <p class="hs-search-error text-lg font-bold text-red-500">
+          
+        </p>
+      </div>
+      <div
+        id="searchLoading"
+        class="hidden flex-col items-center justify-around px-6 py-10">
+        <svg
+          t="1689331200868"
+          class="icon animate-spin"
+          viewBox="0 0 1024 1024"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          p-id="51409"
+          width="128"
+          height="128">
+          <path
+            d="M512 170.666667v85.333333a256 256 0 1 1-223.573333 131.2L213.930667 345.6A341.333333 341.333333 0 1 0 512 170.666667z"
+            fill="#bfbfbf"
+            opacity=".3"
+            p-id="51410"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  
+  <div
+    class="hs-search-other bottom-0 flex flex-col items-center justify-center space-y-2 py-8 text-xs font-bold text-gray-600">
+    <div class="hs-search-cancel hidden md:block">
+      
+    </div>
+    <div class="hs-search-powered_by flex items-center justify-center">
+      
+      
+    </div>
+  </div>
+</section>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/algoliasearch@4.17.2/dist/algoliasearch-lite.umd.js"
+  integrity="sha256-X2G+vjV8i6Jj2NSGFTvy6Z4q2AlmF5aH0HiIpWJ8eU4="
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.56.3/dist/instantsearch.production.min.js"
+  integrity="sha256-mWvjWAfZylKMOg+S3HLq+wng1HHRnl2Idr2r8NsUzIU="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+<script src="/js/search.js"></script>
+
     <footer
   id="footer"
   x-ref="footer"
@@ -868,6 +1172,64 @@
 
   <div class="flex h-5 space-x-3">
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <a
+      href="https://github.com/mrhelloboy/seven"
+      class="text-gray-600 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
+      <svg
+        class="size-4"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+        <path
+          fill-rule="evenodd"
+          d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+          clip-rule="evenodd" />
+      </svg>
+      <span class="sr-only">GitHub account</span>
+    </a>
+  
+
+  
+
+  
+
+  
+    <a
+      href=""
+      class="text-gray-600 hover:text-[--hs-text-color-hover] dark:text-gray-400 dark:hover:text-white">
+      <svg
+        class="size-4"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="currentColor"
+        viewBox="0 0 20 20">
+        <path
+          fill="currentColor"
+          d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z" />
+      </svg>
+
+      <span class="sr-only">X page</span>
+    </a>
+  
+
+  
+
+  
+
 
 
 
@@ -876,30 +1238,7 @@
   
   
   <span x-data class="flex flex-row items-center justify-center"
-    >Powered by <a href="https://gohugo.io/" aria-label="hugo link">
-    <img
-    src="/images/default/hugo-logo-wide.svg"
-    alt="Hugo"
-    class="mx-1 h-3" />
-    </a> & <a
-    href="https://github.com/mrhelloboy/seven"
-    aria-label="The github address of seven theme">
-    <img
-    x-show="!$store.darkMode.on"
-    x-cloak
-    id="footer-theme-light-logo"
-    src="/images/default/seven-logo.svg"
-    alt="seven theme logo"
-    class="mx-1 h-5" />
-
-    <img
-    x-show="$store.darkMode.on"
-    x-cloak
-    id="footer-theme-dark-logo"
-    src="/images/default/seven-logo-dark.svg"
-    alt="seven theme logo"
-    class="mx-1 h-5" />
-    </a></span
+    ></span
   >
 
   <span class="flex flex-col items-center justify-between space-y-3">
@@ -907,12 +1246,11 @@
     
     
     
-       -
       2024
     
 
+    Lab
     
-    All Rights Reserved
   </span>
 </footer>
 
@@ -943,6 +1281,8 @@
       });
     }
   </script>
+
+  
 
 </body>
 </html>

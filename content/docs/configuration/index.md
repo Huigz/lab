@@ -1,20 +1,20 @@
 ---
-title: "重要配置说明"
+title: "Important configuration instructions"
 date: 2024-04-25
 draft: false
 weight: 3
-categories: ["文档"]
+categories: ["Documents"]
 tags:
   [
-    "参数",
+    "parameter",
     "logo",
     "favicon",
-    "评论",
-    "搜索",
-    "背景",
-    "社交链接",
-    "分析",
-    "阅读量",
+    "comment",
+    "search",
+    "background",
+    "society link",
+    "analytics",
+    "page view",
     "Waline",
     "Twikoo",
     "Algolia",
@@ -24,28 +24,28 @@ layout: "docs"
 emoji: ":star_struck:"
 url: "docs/configuation"
 image: "/images/docs/configuation.webp"
-description: "对配置主题的一些重要配置参数进行说明"
+description: "Explain some important configuration parameters for configuring the theme."
 ---
 
-下面列出了在配置主题过程中需要配置的重要参数。
+Here is a list of important parameters that need to be configured during the process of configuring the theme.
 
-如果在使用过程中，发现了一些问题，欢迎在 [Github](https://github.com/hugo-sid/hugo-theme-dream) 上提 issue，或者跟我进一步交流。
+If you find some problems during the process, please feel free to raise an issue on [Github](https://github.com/mrhelloboy/seven/issues) or communicate with me further.
 
-## 网站图标 Favicon
+## Website Icons Favicon
 
-主题是建议使用 **svg** 作为 favicon 的，当然也支持传统的格式。
+The theme recommends using **svg** as favicon, but of course traditional formats are also supported.
 
-参数如下：
+The configuration parameters are as follows:
 
 ```toml
 [app]
-  noFavicon = false  # 是否禁用 favicon
-  svgFavicon = "/favicon.svg"  # 配置 svg favicon 路径
-  iconColor = "#ffffff"  # 配置 Safari mask icon 的颜色
-  themeColor = "#ffffff"  # 配置 Android browser theme 颜色
+  noFavicon = false  # Whether to disable the favicon
+  svgFavicon = "/favicon.svg"  # Configure the path to the svg favicon
+  iconColor = "#ffffff"  # Configure the color of the Safari mask icon
+  themeColor = "#ffffff"  # Configure the Android browser theme color
 ```
 
-存放 favicon 相关资源时，要求在 `static` 目录下：
+When storing favicon related resources, it is required to be in the `static` directory:
 
 ```bash
 .
@@ -61,34 +61,35 @@ description: "对配置主题的一些重要配置参数进行说明"
 └── site.webmanifest
 ```
 
-可以使用 Favicon 生成器生成相关的 favicon 图标。 推荐使用 [RealFaviconGenerator](https://realfavicongenerator.net/)
+The associated favicon icon can be generated using the Favicon generator. Recommended [RealFaviconGenerator](https://realfavicongenerator.net/)
 
-## 网站 Logo
+## Website Logo
 
-主题是支持使用图片或者文字作为 Logo，但更加推荐使用图片。
-在配置图片 Logo时，支持图片的宽高调整，但高度有限制要求：
+The theme supports using either images or text as a logo, but using an image is highly recommended.
 
-> 高度不能大于 56px，一旦大于 56px，会自动调整成 56px
+When configuring an image logo, adjustments to the width and height of the image are supported, but there is a limitation on the height:
 
-主题支持夜间模式，所以配置图片 Logo时，需要同时配置夜间模式下的 Logo：
+> The height cannot exceed 56px. If it's greater than 56px, it will automatically adjust to 56px.
 
-示例如下：
+Since the theme supports a dark mode, when configuring an image logo, you need to simultaneously configure a logo for dark mode.
+
+Here's an example:
 
 ```toml
 [logo]
   img = "/images/logo.svg"
   img_dark = "/images/logo-footer.svg"
-  customLogoHeight = "56"  # 自定义 Logo 的高度
-  customLogoWidth = "120"  # 自定义 Logo 的宽度
+  customLogoHeight = "56"
+  customLogoWidth = "120"
 ```
 
-需要存放Logo图片在 `static` 目录
+You need to store the logo images in the `static` directory.
 
-## 网站背景
+## Website Background
 
-主题支持背景图片，并且默认开启及提供了默认的背景图片。
+The theme supports background images, which are enabled by default, and provides a default background image.
 
-如果需要自定义背景图片，可以配置如下参数：
+To customize the background image, you can configure the following parameters:
 
 ```toml
 [backgroundImage]
@@ -97,13 +98,13 @@ description: "对配置主题的一些重要配置参数进行说明"
    dark = ""
 ```
 
-需要存放背景图片在 `static` 目录。
+You need to store the background image in the `static` directory.
 
-如果不想使用背景图片，可以配置为 `enable = false`。关闭背景图片后，背景色默认为白色、夜间模式下是深灰色。
+If you don't want to use a background image, you can configure it as `enable = false`. After disabling the background image, the background color defaults to white in light mode and dark gray in dark mode.
 
-## 关注链接
+## Follow Links
 
-主题默认只支持邮箱、Github、微信 和 X（原 twitter）。并且主题支持弹出二维码方式，只需要在配置中配置 `QRCodeUrl` 参数。
+The theme defaultly supports email, Github, WeChat, and X (originally Twitter). Additionally, the theme supports a pop-up QR code feature, which only requires configuring the `QRCodeUrl` parameter in the settings.
 
 ```toml {hl_lines=["11-13"],linenostart=1}
 [follow]
@@ -121,15 +122,15 @@ description: "对配置主题的一些重要配置参数进行说明"
     QRCodeUrl = "Your img of wechat qrcode"
 ```
 
-如果想添加其他链接，可以通过重写 `hook_follow_me.html` 模板来实现。详细请阅读[自定义社交链接](docs/social-links)。
+If you wish to add other links, you can achieve this by overriding the `hook_follow_me.html` template. For detailed instructions, please refer to [Customizing Social Links](docs/social-links).
 
-## 评论
+## Comments
 
-目前主题支持只支持三种评论系统：[Waline](https://waline.js.org/)、[Twikoo](https://twikoo.js.org/)、[Disqus](https://disqus.com/)。
+Currently, the theme supports only three types of comment systems: [Waline](https://waline.js.org/), [Twikoo](https://twikoo.js.org/), and [Disqus](https://disqus.com/).
 
-本主题默认使用 Waline 作为评论系统，也推荐使用 Waline。其功能强大，而且根据主题设计风格进行了定制，更加地美观。
+This theme defaults to using Waline as the comment system, and it's also recommended. It's powerful, and it's been customized to match the design style of the theme, making it more aesthetically pleasing.
 
-Waline 或者 Kwikoo 的配置如下：
+Here's how to configure Waline or Twikoo:
 
 ```toml
 [comment]
@@ -149,15 +150,15 @@ Waline 或者 Kwikoo 的配置如下：
     region = ""
 ```
 
-启用 Waline 或者 Twikoo 评论系统时，需要将 `comment.enable` 设置为 `true`。
+When enabling the Waline or Twikoo comment systems, you need to set `comment.enable` to `true`.
 
-当 Waline 启用时，参数 `serverURL` 是必填的，其他参数可选。当 Twikoo 启用时，参数 `envID` 是必填的，其他参数可选，具体如何配置，请参考官方文档。
+When using Waline, the `serverURL` parameter is required, while other parameters are optional. When using Twikoo, the `envID` parameter is required, while others are optional. For specific configuration details, please refer to the official documentation.
 
-**注意：Waline 本身允许匿名评论，但主题已经禁止掉，要求登录才可以评论。**
+**Note: Waline allows anonymous comments by default, but the theme has disabled this feature, requiring users to log in before commenting.**
 
-其中 `comment.enableCounts` 参数用于在文章中显示评论数量。
+The `comment.enableCounts` parameter is used to display the comment count in the article.
 
-配置 Disqus 评论系统时，仅需要配置 `shortname` 参数，具体如何配置，请参考官网文档。
+When configuring the Disqus comment system, you only need to set the `shortname` parameter. For detailed instructions, please refer to the official documentation.
 
 ```toml
 [services]
@@ -165,18 +166,19 @@ Waline 或者 Kwikoo 的配置如下：
     shortname = ""
 ```
 
-当启用 Disqus 评论系统时，需要将 `comment.enable` 设置为 `false`。
+When enabling the Disqus comment system, you need to set `comment.enable` to `false`.
 
-## 搜索
+## Search
 
-本主题仅支持使用 [Algolia](https://www.algolia.com/) 作为搜索系统。如果需要启用搜索功能，需要将 `search.enable` 设置为 `true`。
+This theme only supports using [Algolia](https://www.algolia.com/) as the search system. If you want to enable the search functionality, you need to set `search.enable` to `true`.
 
-配置 Alogolia 时，需要用到的参数。
+Here are the parameters required for configuring Algolia.
 
 ```toml
 type = []
 vars = []
 params = []
+
 app_id = ""
 api_key = ""
 index = ""
@@ -184,25 +186,25 @@ snippet_attr = ""
 highlight_attr = ""
 ```
 
-只有配置了 `app_id`、`api_key`、`index` 参数才能正常使用 Algolia 搜索，需要到官网上进行申请注册。
+To enable Algolia search functionality, you need to provide the `app_id`, `api_key`, and `index` parameters. These credentials can be obtained by registering and applying on the Algolia official website.
 
-而 `snippet_attr` 和 `highlight_attr` 参数用于配置搜索结果中显示的属性。
+The `snippet_attr` and `highlight_attr` parameters are used to configure the attributes displayed in the search results.
 
-比如示例中，`snippet_attr` 配置为 `description`，表示在搜索结果中显示文章的描述，`highlight_attr` 配置为 `title`，表示在搜索结果中同时显示文章的标题。
+For example, in the given sample, `snippet_attr` is configured as `description`, indicating that the article descriptions will be displayed in the search results, while `highlight_attr` is configured as `title`, indicating that the article titles will also be displayed in the search results.
 
-![snippet attr and highlight attr](result-snippet-highlight.png "图1: snippet attr and highlight attr")
+![snippet attr and highlight attr](result-snippet-highlight.en.png "Figure 1: snippet attr and highlight attr")
 
-搜索结果中，`snippet_attr` 和 `highlight_attr` 配置的属性，必须与 `vars` 参数配置的属性一致。
+In the search results, the attributes configured in `snippet_attr` and `highlight_attr` must match the attributes configured in the `vars` parameter.
 
-而 `vars` 和 `params` 参数配置的值表示文章中哪些数据上传到 Algolia 搜索系统上。
+The values configured in the `vars` and `params` parameters indicate which data from the articles is uploaded to the Algolia search system.
 
-而 `type` 参数表示上传到 Algolia 搜索系统的内容类型，比如你在 `content` 目录下创建了 `posts` 目录，那么 `type` 参数配置的值就是 `posts`。
+The `type` parameter indicates the content type uploaded to the Algolia search system. For example, if you create a `posts` directory under the `content` directory, the value configured for the `type` parameter would be `posts`.
 
-而如何将文章上传到 Algolia 搜索系统上，请参考 [上传数据到 Algolia](docs/search) 文章。
+For instructions on how to upload articles to the Algolia search system, please refer to the article [Uploading Data to Algolia](docs/search).
 
-## 网站统计
+## Website Analytics
 
-主题使用了 `goatcounter` 作为站点的统计系统。需要用到的配置参数如下：
+The theme utilizes `goatcounter` as the site's analytics system. Here are the configuration parameters required:
 
 ```toml
 [analytics]
@@ -211,28 +213,28 @@ highlight_attr = ""
     code = ""
 ```
 
-仅需要将 `enable` 设置为 `true`，并配置 `code` 参数，就可以启用 goatcounter 统计。code 参数的值是如何配置请参考 [goatcounter](https://www.goatcounter.com/)。
+To enable GoatCounter analytics, you only need to set `enable` to `true` and configure the `code` parameter. The value of the `code` parameter should be configured according to the instructions provided by [GoatCounter](https://www.goatcounter.com/).
 
-## 文章阅读统计
+## Article Read Count Statistics
 
-如果需要启用文章阅读统计功能，需要将 `enablePageView` 设置为 `true`, 并且启用 `Waline` 或者 `Twikoo` 评论系统。因为是通过 `Waline` 或者 `Twikoo` 相关接口来记录文章阅读次数的。
+If you want to enable the article read count statistics feature, you need to set `enablePageView` to `true` and also enable either the `Waline` or `Twikoo` comment system. This is because the article read count is recorded through the relevant interfaces of `Waline` or `Twikoo`.
 
 ```toml
 [articleMeta]
   enablePageView = true
 ```
 
-## 文章代码块高亮
+## Article Code Block Highlighting
 
-Hugo提供的代码块高亮功能，无法满足在夜间模式下，代码块高亮显示的问题。所以本主题提供了自己一套代码块高亮功能。默认是开启的，如果需要关闭，可以将 `enableHighlight` 设置为 `false`。
+The code block highlighting feature provided by Hugo does not adequately address the issue of code block highlighting in dark mode. Therefore, this theme provides its own code block highlighting functionality. It's enabled by default, but if you need to disable it, you can set `enableHighlight` to `false`.
 
-## 关闭某文章的评论
+## Disabling Comments for a Article
 
-如果需要关闭某篇文章的评论，需要在该文章的 Front Matter 中配置 `disableComment` 参数，设置为 `true` 即可。
+To disable comments for a specific article, you need to configure the `disableComment` parameter in the Front Matter of that article and set it to `true`.
 
 ```yaml
 ---
-title: "快速体验 Seven 主题"
+title: "Quick Start"
 date: 2024-04-25
 params:
   disableComment: true
@@ -240,8 +242,8 @@ url: "docs/quick-start"
 ---
 ```
 
-## 关闭文章目录
+## Disabling Article Table of Contents
 
-如果需要禁用某篇文章的目录，需要在该文章的 Front Matter 中配置 `disableToc` 参数，并设置为 `true`。
+To disable the table of contents for a specific article, you need to configure the `disableToc` parameter in the Front Matter of that article and set it to `true`.
 
-默认情况下，如果文章字数不超过300字，则不显示目录。
+By default, if the article word count is less than 300 words, the table of contents will not be displayed.

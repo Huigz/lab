@@ -1,9 +1,9 @@
 languageCode = "kr"
 languageName = "한국어"
-title = "랩"
+title = "Lab Name"
 weight = 1
 
 [params]
   description = "SKKU 랩"
-  omitCategoryOnMenu = false
+  omitCategoryOnMenu = true
   categoryName = "Category"

@@ -98,7 +98,7 @@
   document.addEventListener("alpine:init", () => {
     Alpine.store("darkMode", {
       on: _initDarkMode,
-      animate: 'false' === 'false',
+      animate: 'true' === 'false',
 
       initDark: _initDarkMode,
       initLight: !(_initDarkMode),

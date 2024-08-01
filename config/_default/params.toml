@@ -3,7 +3,7 @@
 # disableHightlight = false
 
 # There's a transition animation when you turn on dark mode.
-# disableDarkAnimate = false
+disableDarkAnimate = true
 
 [app]
   # Optional site title override for the app when added to an iOS home screen or Android launcher

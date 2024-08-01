@@ -1,16 +1,27 @@
 [[main]]
-  name = "News"
-  pageRef = "archive"
+  name = "Introduce"
+  url = "/about"
   weight = 10
 
 [[main]]
-  name = "Members"
-  pageRef = "members"
+  name = "News"
+  pageRef = "archive"
   weight = 20
 
 
 [[main]]
-  name = "Research Projects"
+  name = "Members"
+  pageRef = "members"
   weight = 30
+
+[[main]]
+  name = "Publications"
+  pageRef = "members"
+  weight = 40
+
+
+[[main]]
+  name = "Research Projects"
+  weight = 50
   pageRef = "docs"
 

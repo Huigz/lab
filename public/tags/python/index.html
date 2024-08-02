@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1.0" />
     <title>
       
-            archive |
+            Python - tags |
             Lab Name
           
     </title><meta
@@ -19,11 +19,11 @@
   content="Lab Name" />
 
 
-  <meta name="title" content="Posts Archive" />
+  <meta name="title" content="Python" />
 
 
 
-  <meta name="description" content="Archive of historical posts." />
+  <meta name="description" content="SKKU 랩" />
 <meta name="theme-color" content="#ffffff" /><link rel="icon" href="/favicon.svg" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
 
 
@@ -447,64 +447,59 @@
     </div>
   </header>
   
-  <section class="mx-auto w-full grow">
-    <div class="mx-auto flex w-full flex-col p-4 md:max-w-screen-md">
+  <div class="mx-auto flex w-full max-w-250 grow flex-col p-6 lg:px-8">
+    <ul
+      class="mx-auto grid w-full grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
       
       
-        
-
-          <div
-            class="mb-4 rounded-lg border border-gray-600 p-5 dark:border-gray-600">
-                <span class="hs-archive-year p-3 text-lg font-semibold text-gray-900 dark:text-white">구정우 교수님</span>
-
-            
-            <ol class="mt-3 rounded-lg">
-              
-                <li
-                  class="group flex flex-col flex-wrap justify-start p-3 hover:rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 md:flex-row md:items-center">
-                  <span class="hs-archive-date text-gray-500 dark:text-gray-300"
-                    >2019</span
-                  >
-                  <a
-                    href=""
-                    class="hs-content-title hs-archive-title text-gray-800 group-hover:text-[--hs-text-color-hover] dark:text-gray-100 dark:group-hover:text-[--hs-text-color-hover-dark] md:pl-3">
-                    조성권·구정우. 2019. &#34;이중운동 프레임으로 본 세계은행의 활동: 평가보고서 토픽 모델링, 2001-2017.『한국사회학』53집 제4호.&#34;
-  
-                  </a>
-                </li>
-              
-            </ol>
-          </div>
-            
+        <li
+  x-data="{ isLoaded: false }"
+  class="items-stretch"
+  x-intersect.threshold.30="isLoaded = true">
+  <div x-show="!isLoaded" x-cloak class="h-56 w-full bg-transparent"></div>
+  <div
+    x-show="isLoaded"
+    x-cloak
+    class="group h-full animate-slideTop overflow-hidden rounded-md bg-white/50 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] backdrop-blur-md transition hover:shadow-md dark:bg-gray-800/70 dark:shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
+    <div class="h-64 w-full md:h-48">
       
-        
-
-          <div
-            class="mb-4 rounded-lg border border-gray-600 p-5 dark:border-gray-600">
-                <span class="hs-archive-year p-3 text-lg font-semibold text-gray-900 dark:text-white">구정우</span>
-
-            
-            <ol class="mt-3 rounded-lg">
-              
-                <li
-                  class="group flex flex-col flex-wrap justify-start p-3 hover:rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 md:flex-row md:items-center">
-                  <span class="hs-archive-date text-gray-500 dark:text-gray-300"
-                    >2019</span
-                  >
-                  <a
-                    href=""
-                    class="hs-content-title hs-archive-title text-gray-800 group-hover:text-[--hs-text-color-hover] dark:text-gray-100 dark:group-hover:text-[--hs-text-color-hover-dark] md:pl-3">
-                    조성권·구정우. 2019. &#34;이중운동 프레임으로 본 세계은행의 활동: 평가보고서 토픽 모델링, 2001-2017.『한국사회학』53집 제4호.&#34;
-  
-                  </a>
-                </li>
-              
-            </ol>
-          </div>
-            
+        <div
+          x-show="!isLoaded"
+          x-cloak
+          class="h-full w-full bg-transparent"></div>
+        <img
+          x-show="isLoaded"
+          x-cloak
+          :src="'http://localhost:1313/imgs/post_test.jpg'"
+          :alt="'/imgs/post_test.jpg'"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover" />
       
     </div>
-  </section>
+
+    <div class="px-4 py-6 sm:p-6">
+      <p class="hs-content-meta block text-xs text-gray-600 dark:text-gray-400">
+        2024/08/02
+      </p>
+
+      <a href="http://localhost:1313/docs/test_project/">
+        <p
+          class="hs-content-title mt-2 text-lg text-gray-900 group-hover:text-[--hs-text-color-hover] dark:text-gray-300">
+          Project Test Post
+        </p>
+      </a>
+    </div>
+  </div>
+</li>
+
+      
+    </ul>
+    
+
+
+
+  </div>
 
 
     

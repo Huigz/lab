@@ -2,119 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/docs/quick-start/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
+    <loc>http://localhost:1313/posts/test/</loc>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/docs/configuation/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/docs/installation/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
+    <loc>http://localhost:1313/docs/test_project/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/introduce/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/news/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/projects/</loc>
     <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tag/</loc>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/welcome/</loc>
-    <lastmod>2024-08-02T00:00:00+00:00</lastmod>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/docs/</loc>
     <lastmod>2024-07-31T17:01:30+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/members/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/algolia/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/analytics/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/background/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/comment/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/demo/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/docments/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/documents/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/favicon/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/github/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/goatcounter/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/installation/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/logo/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/page-view/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/parameter/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/search/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/seven/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/society-link/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/twikoo/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/waline/</loc>
-    <lastmod>2024-07-31T17:01:30+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023-06-28-getting-started-with-multi-module-workspaces.en/</loc>
-    <lastmod>2024-07-31T14:32:45+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/go/</loc>
-    <lastmod>2024-07-31T14:32:45+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/go-tutorial/</loc>
-    <lastmod>2024-07-31T14:32:45+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/go.work/</loc>
-    <lastmod>2024-07-31T14:32:45+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/multi-module/</loc>
-    <lastmod>2024-07-31T14:32:45+09:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2023-06-28-getting-started-with-multi-module-workspaces/</loc>
-    <lastmod>2024-07-31T14:32:45+09:00</lastmod>
+    <lastmod>2024-08-02T15:01:24+09:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/_index.en/</loc>
     <lastmod>2024-07-31T14:32:45+09:00</lastmod>

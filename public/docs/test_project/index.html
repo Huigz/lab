@@ -7,10 +7,7 @@
       id="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>
-      
-            archive |
-            Lab Name
-          
+      Project Test Post | Lab Name
     </title><meta
   name="application-name"
   content="Lab Name" />
@@ -19,11 +16,11 @@
   content="Lab Name" />
 
 
-  <meta name="title" content="Posts Archive" />
+  <meta name="title" content="Project Test Post" />
 
 
 
-  <meta name="description" content="Archive of historical posts." />
+  <meta name="description" content="반짝이는 작은 별들이 모여 광활하고 아름다운 은하수를 이루듯, 흩어진 데이터들을 수집분석하여 사회혁신적인 연구결과를 도출해내고자 하는 연구자들이 모인 이곳은 솜씨 데이터랩입니다." />
 <meta name="theme-color" content="#ffffff" /><link rel="icon" href="/favicon.svg" /><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ffffff" />
 
 
@@ -61,7 +58,13 @@
 
 
 <link href="/font/Oswald-VariableFont_wght/result.css" rel="stylesheet" />
-<script
+
+  
+    
+    
+    
+    <link href="/css/syntax.css" rel="stylesheet" />
+  <script
   defer
   src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.13.10/dist/cdn.min.js"></script>
 <script
@@ -447,64 +450,147 @@
     </div>
   </header>
   
-  <section class="mx-auto w-full grow">
-    <div class="mx-auto flex w-full flex-col p-4 md:max-w-screen-md">
-      
-      
-        
-
-          <div
-            class="mb-4 rounded-lg border border-gray-600 p-5 dark:border-gray-600">
-                <span class="hs-archive-year p-3 text-lg font-semibold text-gray-900 dark:text-white">구정우 교수님</span>
-
-            
-            <ol class="mt-3 rounded-lg">
-              
-                <li
-                  class="group flex flex-col flex-wrap justify-start p-3 hover:rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 md:flex-row md:items-center">
-                  <span class="hs-archive-date text-gray-500 dark:text-gray-300"
-                    >2019</span
-                  >
-                  <a
-                    href=""
-                    class="hs-content-title hs-archive-title text-gray-800 group-hover:text-[--hs-text-color-hover] dark:text-gray-100 dark:group-hover:text-[--hs-text-color-hover-dark] md:pl-3">
-                    조성권·구정우. 2019. &#34;이중운동 프레임으로 본 세계은행의 활동: 평가보고서 토픽 모델링, 2001-2017.『한국사회학』53집 제4호.&#34;
   
-                  </a>
-                </li>
-              
-            </ol>
-          </div>
-            
-      
-        
-
-          <div
-            class="mb-4 rounded-lg border border-gray-600 p-5 dark:border-gray-600">
-                <span class="hs-archive-year p-3 text-lg font-semibold text-gray-900 dark:text-white">구정우</span>
-
-            
-            <ol class="mt-3 rounded-lg">
-              
-                <li
-                  class="group flex flex-col flex-wrap justify-start p-3 hover:rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 md:flex-row md:items-center">
-                  <span class="hs-archive-date text-gray-500 dark:text-gray-300"
-                    >2019</span
-                  >
-                  <a
-                    href=""
-                    class="hs-content-title hs-archive-title text-gray-800 group-hover:text-[--hs-text-color-hover] dark:text-gray-100 dark:group-hover:text-[--hs-text-color-hover-dark] md:pl-3">
-                    조성권·구정우. 2019. &#34;이중운동 프레임으로 본 세계은행의 활동: 평가보고서 토픽 모델링, 2001-2017.『한국사회학』53집 제4호.&#34;
   
-                  </a>
-                </li>
-              
-            </ol>
-          </div>
-            
-      
+
+  
+    <div id="hs-feature" class="h-60 w-full md:h-120">
+      <img
+        x-data="{ isGradient: false }"
+        :class="{ 'image-gradient': !isGradient }"
+        class="h-60 w-full object-cover md:h-120"
+        src="http://localhost:1313/imgs/post_test.jpg"
+        alt="Hero Image of content"
+        srcset="" />
     </div>
-  </section>
+  
+
+
+  <div
+    id="hs-content-container"
+    class="my-5 w-full rounded-b-lg px-5 md:px-10 lg:px-1">
+    <div
+      class="mx-auto flex max-w-screen-xl lg:grid lg:grid-flow-col lg:grid-cols-4 xl:grid-cols-5">
+      
+      <div
+  class="hidden lg:sticky lg:top-28 lg:mt-2 lg:flex lg:max-w-60 lg:flex-col lg:items-stretch lg:overflow-y-auto"></div>
+
+      
+      <div id="hs-container" class="mx-auto w-full lg:col-span-2 xl:col-span-3">
+        <div class="py-5 md:px-1 lg:px-5">
+          <div class="flex w-full flex-col">
+            <div
+              class="hs-content-meta flex flex-row flex-wrap items-center space-x-1 pb-2 pt-1 text-xs font-normal tracking-wide text-gray-500/90 dark:text-gray-500">
+              
+              <span class="hs-content-category flex flex-row gap-1">
+                
+                  <span class="italic text-red-700"> > </span>
+                  <a
+                    class="hover:text-[--hs-text-color-hover] hover:underline hover:decoration-[--decoration-color] hover:underline-offset-4"
+                    href="http://localhost:1313/categories/projects/"
+                    >Projects</a
+                  >
+                
+              </span>
+            </div>
+            <div
+              id="hs-content-title"
+              class="hs-content-title py-1 text-start text-3xl font-bold tracking-wide text-black dark:text-white lg:text-4xl">
+              Project Test Post
+            </div>
+
+            <div
+              class="hs-content-meta flex flex-row flex-wrap items-center space-x-1 pb-1 pt-3.5 text-xs font-extralight tracking-wide text-gray-500/90 dark:text-gray-600">
+              <span>2024/08/02</span>
+              <div
+                class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
+              <span>0&nbsp;</span>
+              <div
+                class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
+              <span>0&nbsp;</span>
+              
+                <div
+                  class="h-1 w-1 rounded-full bg-red-700 dark:bg-red-700/50"></div>
+                <p>
+                  <span
+                    id="twikoo_visitors"
+                    class="page-info-pageview-count"
+                    data-path="/docs/test_project/"
+                    >...</span
+                  >
+                  &nbsp;
+                </p>
+              
+              
+            </div>
+          </div>
+
+          
+
+
+          <div
+            id="hs-content"
+            class="hs-content format mx-auto mt-2 max-w-none dark:format-invert md:format-base format-figure:flex format-figure:flex-col format-figure:items-center format-img:cursor-zoom-in dark:text-gray-300 lg:mt-11">
+            
+          </div>
+
+          <div class="hs-content-meta pb-5 pt-3">
+            
+            <span
+              class="hs-content-tag flex flex-row flex-wrap justify-start gap-2 pl-1 text-sm font-normal tracking-wide text-gray-500/90 dark:text-gray-500">
+              
+                <a
+                  class="text-center hover:text-[--hs-text-color-hover]"
+                  href="http://localhost:1313/tags/python/"
+                  ><span class="text-red-700 ">#</span
+                  ><span
+                    class="hover:text-[--hs-text-color-hover] hover:underline hover:decoration-[--decoration-color] hover:underline-offset-4"
+                    >Python</span
+                  ></a
+                >
+              
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      
+
+    </div>
+
+    
+    
+
+  </div>
+
+  
+  
+    <button
+      x-data="{
+        show: false,
+        init() {
+          window.addEventListener('scroll', () => {
+            this.show = window.scrollY > 100
+          })
+        }
+      }"
+      x-show="show"
+      @click="window.scrollTo({ top: 0, behavior: 'smooth' })"
+      x-cloak
+      type="button"
+      class="buttom-circle fixed bottom-24 end-8 flex h-14 w-14 items-center justify-center bg-white/85 text-gray-500 backdrop-blur-md dark:bg-gray-800/85 dark:text-gray-500 md:end-20">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="size-6"
+        fill="currentColor"
+        viewBox="0 -960 960 960">
+        <path
+          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+      </svg>
+      <span class="sr-only">Go to Top</span>
+    </button>
+  
+
 
 
     
@@ -685,6 +771,34 @@
     
   </span>
 </footer>
+
+  
+  
+  <script src="/js/toc.js"></script>
+
+  
+  
+  <script src="/js/zoom-img.js" defer></script>
+
+  
+  
+  <script src="/js/link-to-top.js" defer></script>
+
+  
+    
+    
+    <script src="/js/code-copy.js" defer></script>
+  
+
+
+  <script>
+    function toComment() {
+      window.scrollTo({
+        top: document.getElementById("hs-comment").offsetTop - 100,
+        behavior: "smooth",
+      });
+    }
+  </script>
 
 </body>
 </html>

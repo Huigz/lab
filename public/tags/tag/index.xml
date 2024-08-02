@@ -6,10 +6,10 @@
     <description>Recent content in Tag on Lab Name</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>kr</language>
-    <lastBuildDate>Fri, 02 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Aug 2024 15:01:24 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tag/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post Test</title>
+      <title>News Post Test</title>
       <link>http://localhost:1313/posts/test/</link>
       <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/test/</guid>

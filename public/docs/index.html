@@ -13,10 +13,10 @@
           
     </title><meta
   name="application-name"
-  content="Seven Theme" />
+  content="Lab Name" />
 <meta
   name="apple-mobile-web-app-title"
-  content="Seven Theme" />
+  content="Lab Name" />
 
 
   <meta name="title" content="Lab Projects" />
@@ -47,12 +47,6 @@
 
 
 
-
-  
-    
-      <link rel="stylesheet" href="/css/waline.css" />
-    
-  
 
 
 
@@ -281,7 +275,7 @@
 
   
     <a
-      href="/"
+      href="/archive/"
       class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
       >Publications</a
     >
@@ -289,7 +283,7 @@
 
   
     <a
-      href="/docs/"
+      href="/categories/projects/"
       class="hs-menus text-sm font-semibold leading-6 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
       >Research Projects</a
     >
@@ -407,7 +401,7 @@
 
   
     <a
-      href="/"
+      href="/archive/"
       class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
       >Publications</a
     >
@@ -415,7 +409,7 @@
 
   
     <a
-      href="/docs/"
+      href="/categories/projects/"
       class="hs-menus w-full rounded-lg px-3 py-2 text-center text-base font-semibold leading-7 text-gray-900 hover:text-[--hs-text-color-hover] dark:text-white"
       >Research Projects</a
     >
@@ -457,34 +451,48 @@
     <ul
       class="mx-auto grid w-full grid-cols-1 gap-x-4 gap-y-6 md:grid-cols-2 lg:grid-cols-3">
       
-        <div
-          class="col-span-1 mb-5 flex max-w-prose flex-col md:col-span-2 lg:col-span-3">
-          <div
-            class="flex items-center justify-start space-x-2 text-gray-800 dark:text-gray-400">
-            
-              <svg
-                class="size-7"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -960 960 960"
-                fill="currentColor">
-                <path
-                  d="M240-500v-220h220v220H240Zm0 260v-220h220v220H240Zm260-260v-220h220v220H500Zm0 260v-220h220v220H500ZM320-580h60v-60h-60v60Zm260 0h60v-60h-60v60ZM320-320h60v-60h-60v60Zm260 0h60v-60h-60v60ZM380-580Zm200 0Zm0 200Zm-200 0ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Z" />
-              </svg>
-            
-            <p class="hs-instruction-title text-2xl font-bold">Lab Projects</p>
-          </div>
-
-          <div
-            class="hs-instruction format py-5 dark:format-invert format-a:text-[--hs-text-color-hover] dark:text-gray-400">
-            <p>Lab 연구 방향/내용 소개 &hellip;. 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개 소개
-소개 소개 소개 소개 소개 소개 소개 소개 소개 소개소개 소개 소개 소개 소개 소개 소개 소개 소개 소개소개 소개 소개 소개 소개 소개 소개 소개 소개 소개
-소개 소개 소개 소개 소개 소개 소개 소개 소개 소개소개 소개 소개 소개 소개 소개 소개 소개 소개 소개소개 소개 소개 소개 소개 소개 소개 소개 소개 소개</p>
-
-          </div>
-          <span
-            class="h-px w-full max-w-4xl bg-gray-300 dark:bg-gray-600"></span>
-        </div>
       
+        <li
+  x-data="{ isLoaded: false }"
+  class="items-stretch"
+  x-intersect.threshold.30="isLoaded = true">
+  <div x-show="!isLoaded" x-cloak class="h-56 w-full bg-transparent"></div>
+  <div
+    x-show="isLoaded"
+    x-cloak
+    class="group h-full animate-slideTop overflow-hidden rounded-md bg-white/50 shadow-[0_7px_29px_0_rgba(100,100,111,0.2)] backdrop-blur-md transition hover:shadow-md dark:bg-gray-800/70 dark:shadow-[0_5px_15px_rgba(0,0,0,0.35)]">
+    <div class="h-64 w-full md:h-48">
+      
+        <div
+          x-show="!isLoaded"
+          x-cloak
+          class="h-full w-full bg-transparent"></div>
+        <img
+          x-show="isLoaded"
+          x-cloak
+          :src="'http://localhost:1313/imgs/post_test.jpg'"
+          :alt="'/imgs/post_test.jpg'"
+          loading="lazy"
+          decoding="async"
+          class="h-full w-full object-cover" />
+      
+    </div>
+
+    <div class="px-4 py-6 sm:p-6">
+      <p class="hs-content-meta block text-xs text-gray-600 dark:text-gray-400">
+        2024/08/02
+      </p>
+
+      <a href="http://localhost:1313/docs/test_project/">
+        <p
+          class="hs-content-title mt-2 text-lg text-gray-900 group-hover:text-[--hs-text-color-hover] dark:text-gray-300">
+          Project Test Post
+        </p>
+      </a>
+    </div>
+  </div>
+</li>
+
       
         <li
   x-data="{ isLoaded: false }"
@@ -714,8 +722,6 @@
     
   </span>
 </footer>
-
-  
 
 </body>
 </html>

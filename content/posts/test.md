@@ -1,7 +1,7 @@
 ---
 weight: 2
 layout: "posts"
-title: "Post Test"
+title: "News Post Test"
 date: 2024-08-02
 draft: false
 image: "/imgs/post_test.jpg"

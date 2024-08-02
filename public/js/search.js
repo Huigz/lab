@@ -1,9 +1,9 @@
 (() => {
   // ns-params:@params
-  var api_id = "995JRM5ZAU";
-  var api_key = "4a1095e4b8c96d2baee42d4c64b16afa";
+  var api_id = "P56T78TNPX";
+  var api_key = "4c85555148056bb8aa030d322ef8b1f1";
   var highlight = "title";
-  var index = "hugo_theme_seven_demo";
+  var index = "lab";
   var placeholder = "";
   var snippet = "description";
 

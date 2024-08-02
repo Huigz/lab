@@ -16,12 +16,12 @@
 
 [[main]]
   name = "Publications"
-  pageRef = "/categories/publications/"
+  pageRef = "archive"
   weight = 40
 
 
 [[main]]
   name = "Research Projects"
   weight = 50
-  pageRef = "docs"
+  pageRef = "/categories/projects/"
 

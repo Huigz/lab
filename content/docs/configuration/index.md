@@ -1,7 +1,7 @@
 ---
 title: "Important configuration instructions"
 date: 2024-04-25
-draft: false
+draft: true
 weight: 3
 categories: ["Documents"]
 tags:

@@ -5,6 +5,7 @@ draft: false
 URL: "members"
 layout: goods
 data: "content/members/members.json"
+disableComment: true
 ---
 
 반짝이는 작은 별들이 모여 

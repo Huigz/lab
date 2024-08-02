@@ -1,7 +1,7 @@
 ---
 title: "Install the Theme"
 date: 2024-04-25
-draft: false
+draft: true
 weight: 6
 categories: ["Docments"]
 tags: ["installation"]

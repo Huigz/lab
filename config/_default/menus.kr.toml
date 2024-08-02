@@ -5,7 +5,7 @@
 
 [[main]]
   name = "News"
-  pageRef = "archive"
+  pageRef = "/categories/news/"
   weight = 20
 
 
@@ -16,7 +16,7 @@
 
 [[main]]
   name = "Publications"
-  pageRef = "members"
+  pageRef = "/categories/publications/"
   weight = 40
 
 
